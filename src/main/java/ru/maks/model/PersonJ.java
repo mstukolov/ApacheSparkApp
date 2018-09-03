@@ -29,6 +29,17 @@ public class PersonJ implements Serializable{
     @JsonProperty(value = "gender")
     private String gender;
 
+    public PersonJ() {
+    }
+
+    public PersonJ(Long id, String fname, String lname, String email, String gender) {
+        this.id = id;
+        this.fname = fname;
+        this.lname = lname;
+        this.email = email;
+        this.gender = gender;
+    }
+
     public Long getId() {
         return id;
     }
